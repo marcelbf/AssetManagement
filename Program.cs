@@ -13,7 +13,7 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-app.MapGet("/location/{user}", (string? user) =>
+app.MapGet("/location/{user}", (string user) =>
 {
     if (!Validation.userValidation(user))
     {
